@@ -1,5 +1,4 @@
 const express = require('express');
-const { fstat } = require('fs');
 const app = express();
 const path = require('path');
 const port = 80;
@@ -16,7 +15,7 @@ app.set('views' , path.join(__dirname, 'views') )
 
 // END POINTS
 app.get('/', (req, res)=>{
-  res.status(200).render('index.pug', vars);
+  res.status(200).render('index.pug');
 })
 
 app.post('/', (req , res )=>{
