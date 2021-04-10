@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black ;
+}
+.wrapper{
+    display: grid;
+}
+nav{
+    background-color: rgb(41, 24, 24);
+    
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+}
+
+a:hover{
+    background-color: darkgrey;
+    color: black;
+    text-decoration: underline;
+}
+
+.container{
+    background: url(../static/bac.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    height: 600px;
+}
+
+input{
+    display: block;
+   margin: 8px auto;
+   padding: 4px 8px;
+   width: 70%;
+   border: 2px solid rgb(61, 1, 1);
+   border-radius: 5px;
+   outline: none;
+}
+textarea{
+    display: block;
+    margin: 8px auto;
+    padding: 4px 8px;
+    width: 70%;
+    border-radius: 5px;
+    border: 2px solid rgb(61, 1, 1);
+    outline: none;
+}
+
+.btn{
+    margin: 8px;
+    padding: 8px 40px;
+    outline: none;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 1px 1px 2px    maroon;
+}
